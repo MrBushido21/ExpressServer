@@ -20,12 +20,6 @@ const UserSchema = new mongoose.Schema({
     },
     favouriteAnimeIds: {
         type: Array,
-        unique: true,
-        default: []
-    },
-    posts: {
-        type: Array,
-        unique: true,
         default: []
     },
     avatarUrl: String,
