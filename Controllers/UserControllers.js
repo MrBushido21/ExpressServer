@@ -113,7 +113,7 @@ export const updateAva = async (req, res) => {
         const updatedUser = await UserModel.findByIdAndUpdate(
             userId,      
             { 
-                avatarUrl: `http://localhost:5000/uploads/${req.file.originalname}`
+                avatarUrl: `https://expressserver-0rxb.onrender.com/uploads/${req.file.originalname}`
             },
             { new: true}
         )
@@ -139,7 +139,7 @@ export const updateBg = async (req, res) => {
         const updatedUser = await UserModel.findByIdAndUpdate(
             userId,
             { 
-                profileBg: `http://localhost:5000/uploads/${req.file.originalname}`
+                profileBg: `https://expressserver-0rxb.onrender.com/uploads/${req.file.originalname}`
             },
             { new: true}
         )
